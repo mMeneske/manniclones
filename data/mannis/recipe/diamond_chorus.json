@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "cdc",
+    "dCd",
+    "cdc"
+  ],
+  "key": {
+    "c": [
+      "minecraft:chorus_fruit"
+    ],
+    "C": [
+      "minecraft:chorus_flower"
+    ],
+    "d": [
+      "minecraft:diamond"
+    ]
+  },
+  "result": {
+    "id": "minecraft:chorus_fruit",
+    "components": {
+      "minecraft:item_model": "diamond_chorus",
+      "minecraft:item_name": "Diamond chorus",
+      "minecraft:custom_data": {
+        "diamond_chorus": true
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:consumable": {
+        "consume_seconds": 1,
+        "has_consume_particles": true
+      }
+    },
+    "count": 2
+  }
+}

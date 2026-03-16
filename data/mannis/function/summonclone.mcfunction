@@ -7,7 +7,6 @@ scoreboard players operation @n[type=minecraft:mannequin,tag=mannidemo] manniclo
 
 # Edit the pearl
 data modify entity @s Owner set from entity @n[type=minecraft:mannequin,tag=mannidemo] UUID
-data merge entity @s {NoGravity:1}
 
 # Marking down the connection
 tag @s add used

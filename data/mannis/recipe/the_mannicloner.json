@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "eSe",
+    "RsR",
+    "epe"
+  ],
+  "key": {
+    "e": [
+      "minecraft:ender_pearl",
+      "minecraft:ender_eye"
+    ],
+    "S": [
+      "minecraft:skeleton_skull",
+      "minecraft:wither_skeleton_skull"
+    ],
+    "R": [
+      "minecraft:end_rod"
+    ],
+    "s": [
+      "minecraft:sculk_shrieker"
+    ],
+    "p": [
+      "minecraft:pale_oak_fence",
+      "minecraft:pale_oak_fence_gate"
+    ]
+  },
+  "result": {
+    "id": "minecraft:ender_pearl",
+    "components": {
+      "minecraft:custom_data": {
+        "mannicloner": true
+      },
+      "minecraft:item_model": "the_mannicloner.json",
+      "minecraft:item_name": "The mannicloner",
+      "minecraft:rarity": "rare"
+    }
+  }
+}
