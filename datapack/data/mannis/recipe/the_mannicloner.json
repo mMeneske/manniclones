@@ -32,9 +32,11 @@
       "minecraft:custom_data": {
         "mannicloner": true
       },
-      "minecraft:item_model": "the_mannicloner.json",
+      "minecraft:item_model": "the_mannicloner",
       "minecraft:item_name": "The mannicloner",
-      "minecraft:rarity": "rare"
+      "minecraft:rarity": "epic",
+      "minecraft:max_stack_size": 16,
+      "minecraft:use_cooldown":{"seconds":0.01}
     }
   }
 }

@@ -1,0 +1,9 @@
+{
+  "pack": {
+    "description": "Texturepack for Manniclones v0.4b",
+    "supported_formats": {
+      "min_inclusive": [75, 0],
+      "max_inclusive": [75, 0]
+    }
+  }
+}

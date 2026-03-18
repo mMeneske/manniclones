@@ -1,5 +1,5 @@
 # Summon and configure new manniclone
-summon minecraft:mannequin ~ ~ ~ {PortalCooldown:0,Tags:["mannidemo"]}
+summon minecraft:mannequin ~ ~ ~ {Invulnerable:1b,PortalCooldown:0,Tags:["mannidemo"]}
 ride @n[type=minecraft:mannequin,tag=mannidemo] mount @s
 effect give @n[type=minecraft:mannequin,tag=mannidemo] minecraft:invisibility infinite 1 true
 data modify entity @n[type=minecraft:mannequin,tag=mannidemo] profile.id set from entity @s Owner

@@ -10,3 +10,6 @@ execute as @e[type=minecraft:mannequin,tag=manniclone] at @s run function mannis
 # Gives all players a cloneId
 scoreboard players add @a cloneId 0
 execute as @a if score @s cloneId matches 0 run function mannis:give_player_cloneid
+
+# If manniclone dies:
+execute 
