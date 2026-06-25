@@ -1,1 +1,4 @@
 scoreboard objectives remove cloneId 
+scoreboard objectives remove manniclonesId
+scoreboard objectives remove originHealth
+scoreboard objectives remove originHealthLate

@@ -2,9 +2,10 @@
 advancement revoke @s only mannis:use_diamond_chorus
 
 # Summons new manniclone at player position
-execute if entity @e[type=minecraft:mannequin,tag=manniclone] run execute at @s as @n[type=minecraft:mannequin,tag=manniclone] if score @s manniclonesId = @p cloneId run summon minecraft:mannequin ~ ~ ~ {Invulnerable:1,PortalCooldown:0,Tags:["manniclone","none"]}
+execute if entity @e[type=minecraft:mannequin,tag=manniclone] run execute at @s as @n[type=minecraft:mannequin,tag=manniclone] if score @s manniclonesId = @p cloneId run summon minecraft:mannequin ~ ~ ~ {Invulnerable:0b,PortalCooldown:0,Tags:["manniclone","none"]}
 data modify entity @n[type=minecraft:mannequin,tag=manniclone,tag=none] Rotation set from entity @s Rotation
 data modify entity @n[type=minecraft:mannequin,tag=manniclone,tag=none] profile.id set from entity @s UUID
+data modify entity @n[type=minecraft:mannequin,tag=manniclone,tag=none] Health set from entity @s Health
 scoreboard players operation @n[type=minecraft:mannequin,tag=manniclone,tag=none] manniclonesId = @s cloneId
 forceload add ~ ~
 
@@ -15,5 +16,5 @@ execute as @e[tag=te] run tag @s remove te
 tag @n[type=minecraft:mannequin,tag=manniclone,tag=none] remove none
 tp @n[type=minecraft:mannequin,tag=manniclone,tag=temp]
 data modify entity @s Rotation set from entity @n[type=minecraft:mannequin,tag=manniclone,tag=temp] Rotation
-tp @n[type=minecraft:mannequin,tag=manniclone,tag=temp] ~ -100 ~
+tp @n[type=minecraft:mannequin,tag=manniclone,tag=temp] ~ -1000 ~
 kill @n[type=minecraft:mannequin,tag=manniclone,tag=temp]
