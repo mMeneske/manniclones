@@ -1,3 +1,5 @@
+# This function will be removed in the next full release
+
 # Summon and configure new manniclone
 summon minecraft:mannequin ~ ~ ~ {Invulnerable:0b,PortalCooldown:0,Tags:["mannidemo"]}
 ride @n[type=minecraft:mannequin,tag=mannidemo] mount @s

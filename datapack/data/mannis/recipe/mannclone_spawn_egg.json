@@ -8,8 +8,9 @@
   ],
   "key": {
     "e": [
-      "minecraft:ender_pearl",
-      "minecraft:ender_eye"
+      "minecraft:egg",
+      "minecraft:brown_egg",
+      "minecraft:blue_egg"
     ],
     "S": [
       "minecraft:skeleton_skull",
@@ -27,16 +28,24 @@
     ]
   },
   "result": {
-    "id": "minecraft:ender_pearl",
+    "id": "minecraft:allay_spawn_egg",
     "components": {
       "minecraft:custom_data": {
-        "mannicloner": true
+        "user": -1
       },
       "minecraft:item_model": "the_mannicloner",
-      "minecraft:item_name": "The mannicloner",
+      "minecraft:item_name": "Manniclone spawn egg",
       "minecraft:rarity": "epic",
-      "minecraft:max_stack_size": 16,
-      "minecraft:use_cooldown":{"seconds":0.01}
+      "minecraft:max_stack_size": 8,
+      "minecraft:entity_data": {
+        "id":"minecraft:mannequin",
+        "Tags":["unowned"],
+        "PortalCooldown":0,
+        "Invulnerable":false,
+        "profile":{
+          "name":"Notch"
+        }
+      }
     }
   }
 }
