@@ -1,0 +1,26 @@
+{
+  "function": "minecraft:set_lore",
+  "mode": "replace_all",
+  "entity": "this",
+  "lore": [
+    {
+      "text": "Clone of: ",
+      "extra": [
+        {
+          "selector": "@s"
+        }
+      ]
+    },
+    {
+      "text": "UIS: ",
+      "extra": [
+        {
+          "score": {
+            "name": "@s",
+            "objective": "cloneId"
+          }
+        }
+      ]
+    }
+  ]
+}

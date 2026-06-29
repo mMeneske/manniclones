@@ -18,4 +18,5 @@ execute as @e[type=mannequin,tag=unowned] at @s run function mannis:manniclone_s
 execute as @e[type=minecraft:mannequin,tag=manniclone] at @s run function mannis:copystuff
 
 # Gives all players a cloneId
+scoreboard players add @a cloneId 0
 execute as @a if score @s cloneId matches 0 run function mannis:give_player_cloneid
