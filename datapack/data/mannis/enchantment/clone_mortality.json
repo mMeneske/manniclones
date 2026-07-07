@@ -1,0 +1,41 @@
+{
+  "description": {
+    "text": "Clone Mortality"
+  },
+  "supported_items": "#mannis:clone_mortality_supported_items",
+  "primary_items": "#mannis:clone_mortality_supported_items",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 1
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "mannis:enchantments/clone_mortality_execution_taggive"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "mannis:enchantments/clone_mortality_execution_final"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ]
+  }
+}

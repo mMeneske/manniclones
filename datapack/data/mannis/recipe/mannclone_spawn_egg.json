@@ -33,17 +33,18 @@
       "minecraft:custom_data": {
         "user": -1
       },
-      "minecraft:item_model": "the_mannicloner",
+      "minecraft:item_model": "player_head",
       "minecraft:item_name":  "Manniclone Spawn Egg",
       "minecraft:rarity": "epic",
       "minecraft:max_stack_size": 16,
+      "profile": "MHF_Steve",
       "minecraft:entity_data": {
         "id":"minecraft:mannequin",
         "Tags":["unowned"],
         "PortalCooldown":0,
         "Invulnerable":false,
         "profile":{
-          "name":"Notch"
+          "name":"MHF_Steve"
         }
       }
     }

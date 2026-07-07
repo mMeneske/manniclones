@@ -10,17 +10,6 @@
           "selector": "@s"
         }
       ]
-    },
-    {
-      "text": "UIS: ",
-      "extra": [
-        {
-          "score": {
-            "name": "@s",
-            "objective": "cloneId"
-          }
-        }
-      ]
     }
   ]
 }

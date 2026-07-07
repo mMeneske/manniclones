@@ -42,6 +42,14 @@ execute if items entity @s weapon.offhand minecraft:allay_spawn_egg[minecraft:cu
 execute at @n[type=minecraft:item,nbt={Item:{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}}] run item modify entity @n[type=minecraft:item,nbt={Item:{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}}] container.0 mannis:set_lore
 ## Bundles
 
+# Change head item
+## Checks Inventory
+execute if items entity @s container.* minecraft:allay_spawn_egg[minecraft:custom_data={user:-1b}] run data modify entity @s Inventory[{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}].components.minecraft:profile set value {}
+execute if items entity @s container.* minecraft:allay_spawn_egg[minecraft:custom_data={user:-1b}] run data modify entity @s Inventory[{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}].components.minecraft:profile.id set from entity @s UUID
+## Checks Offhand
+## Checks Items
+## Bundles
+
 # Fix user custom data
 ## Checks Inventory
 execute store result score @s created_owner run data get entity @s Inventory.[{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}].count
@@ -58,4 +66,4 @@ execute if items entity @s weapon.offhand minecraft:allay_spawn_egg[minecraft:cu
 execute store result score @s created_owner run data get entity @n[type=minecraft:item,nbt={Item:{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}}] Item.count
 execute if items entity @n[type=minecraft:item,nbt={Item:{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}}] container.* minecraft:allay_spawn_egg[minecraft:custom_data={user:-1b}] run scoreboard players operation @s crafted_manniclones -= @s created_owner
 execute as @n[type=minecraft:item,nbt={Item:{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}}] run execute store result entity @s Item.components."minecraft:custom_data".user int 1 run scoreboard players get @p cloneId
-
+## Bundles
