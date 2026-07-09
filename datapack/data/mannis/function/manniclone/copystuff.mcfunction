@@ -42,7 +42,4 @@ scoreboard players operation @s entityHealth += @s current_mannibias
 execute as @a if score @s cloneId = @n[type=minecraft:mannequin,tag=manniclone,tag=temp] manniclonesId store result entity @s Health int 1 run scoreboard players get @s entityHealth
 execute store result entity @s Health int 1 run scoreboard players get @s entityHealth
 
-## Copies player health to clone health for extra safety
-#execute as @a if score @s cloneId = @n[type=minecraft:mannequin,tag=manniclone,tag=temp] manniclonesId store result entity @n[type=minecraft:mannequin,tag=manniclone,tag=temp] Health int 1 run data get entity @s Health
-
 tag @s remove temp

@@ -47,7 +47,12 @@ execute at @n[type=minecraft:item,nbt={Item:{id:"minecraft:allay_spawn_egg",comp
 execute if items entity @s container.* minecraft:allay_spawn_egg[minecraft:custom_data={user:-1b}] run data modify entity @s Inventory[{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}].components.minecraft:profile set value {}
 execute if items entity @s container.* minecraft:allay_spawn_egg[minecraft:custom_data={user:-1b}] run data modify entity @s Inventory[{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}].components.minecraft:profile.id set from entity @s UUID
 ## Checks Offhand
+execute if items entity @s weapon.offhand minecraft:allay_spawn_egg[minecraft:custom_data={user:-1b}] run data modify entity @s equipment.offhand.components.minecraft:profile set value {}
+execute if items entity @s weapon.offhand minecraft:allay_spawn_egg[minecraft:custom_data={user:-1b}] run data modify entity @s equipment.offhand.components.minecraft:profile.id set from entity @s UUID
 ## Checks Items
+execute as @n[type=minecraft:item,nbt={Item:{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}}] run data modify entity @s Inventory[{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}].components.minecraft:profile set value {}
+execute as @n[type=minecraft:item,nbt={Item:{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}}] run data modify entity @s Inventory[{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}].components.profile set value {}
+execute as @n[type=minecraft:item,nbt={Item:{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}}] run data modify entity @s Inventory[{id:"minecraft:allay_spawn_egg",components:{"minecraft:custom_data":{user:-1b}}}].components.minecraft:profile.id set from entity @p UUID
 ## Bundles
 
 # Fix user custom data

@@ -1,4 +1,6 @@
-tellraw @s "§cWarning! §9This is very dangerous, for this reason you have to go into the files, and manually uncomment all the following lines. §6This is for your own safety."
+tellraw @s "This feature is not complete yet"
+
+#tellraw @s "§cWarning! §9This is very dangerous, for this reason you have to go into the files, and manually uncomment all the following lines. §6This is for your own safety."
 #scoreboard objectives remove cloneId 
 #scoreboard objectives remove manniclonesId
 #scoreboard objectives add cloneId dummy

@@ -4,7 +4,7 @@
   },
   "supported_items": "#mannis:clone_mortality_supported_items",
   "primary_items": "#mannis:clone_mortality_supported_items",
-  "weight": 1,
+  "weight": 999,
   "max_level": 3,
   "min_cost": {
     "base": 1,
